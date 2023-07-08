@@ -1,0 +1,162 @@
+@tailwind base;
+
+@layer base {
+  @font-face {
+    font-family: danawt;
+    font-style: normal;
+    font-weight: bold;
+    src: url("../fonts/woff2/DanaFaNum-Bold.woff2") format("woff2"),
+      /* FF39+,Chrome36+, Opera24+*/
+      url("../fonts/woff/DanaFaNum-Bold.woff") format("woff");
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  }
+
+  @font-face {
+    font-family: danawt;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/woff2/DanaFaNum-Regular.woff2") format("woff2"),
+      /* FF39+,Chrome36+, Opera24+*/
+      url("../fonts/woff/DanaFaNum-Regular.woff") format("woff");
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  }
+}
+
+@tailwind components;
+
+@layer components {
+  .border-style {
+    @apply border border-gray-300;
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .over-gradient {
+    @apply content-[''] h-[200px] left-0 absolute right-0 top-0;
+  }
+
+  .fixed-top {
+    @apply left-0 fixed translate-y-0 top-0 w-full z-50;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@tailwind utilities;
+
+body {
+  @apply font-danawt;
+}
+
+.mySwiper2 .swiper-button-next {
+  @apply w-12 h-12 rounded-lg bg-white bg-opacity-40 backdrop-blur-sm border-blue-600 border-2;
+}
+
+.mySwiper2 .swiper-button-next::after {
+  @apply text-2xl;
+}
+
+.mySwiper2 .swiper-button-prev {
+  @apply w-12 h-12 rounded-lg bg-white bg-opacity-40 backdrop-blur-sm border-blue-600 border-2;
+}
+
+.mySwiper2 .swiper-button-prev::after {
+  @apply text-2xl;
+}
+
+.white-shadow-bottom {
+  background-image: linear-gradient(0deg, #fcfcfc, transparent, transparent, transparent);
+  bottom: 0;
+}
+
+.white-shadow-top {
+  background-image: linear-gradient(180deg, #fcfcfc, transparent);
+  top: 0;
+}
+
+svg .country:hover {
+  stroke: #777;
+  opacity: .7
+}
+
+.st0,
+.st3,
+.st4,
+.st5,
+.st6,
+.st7,
+.st8,
+.st9 {
+  stroke: #ccc;
+  stroke-width: .5;
+  fill: #31a8f2
+}
+
+.st0 {
+  fill: #ddd;
+  stroke: #ddd;
+  stroke-width: 1
+}
+
+.st2 {
+  fill: transparent
+}
+.tooltip{
+  opacity: 0;
+  visibility: hidden;
+}
+.showTooltip{
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip .tooltipTitle {
+  background: #afc7ff;
+  border-radius: 5px;
+  color: #313131;
+  height: 40px;
+  text-align: center;
+  width: 120px
+}
+
+.tooltip .tooltipLineHorizontal {
+  border-top: 2px solid #8390c1;
+  content: "";
+  height: 2px;
+  margin-left: 3px;
+  margin-right: -2px;
+  width: 40px
+}
+
+.tooltip .tooltipLineVertical {
+  border-right: 2px solid #8390c1;
+  content: "";
+  height: 80px;
+  left: 100%;
+  position: absolute;
+  top: 50%;
+  width: 2px
+}
+
+.tooltip:hover {
+  cursor: pointer
+}
+
+.tooltip.flipY {
+  transform: rotateY(180deg);
+  transform-origin: right
+}
+
+.tooltip.flipY .tooltipTitle {
+  transform: rotateY(180deg)
+}
