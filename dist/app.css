@@ -145,7 +145,7 @@ svg .country:hover {
   left: 100%;
   position: absolute;
   top: 50%;
-  width: 2px
+  width: 2px;
 }
 
 .tooltip:hover {

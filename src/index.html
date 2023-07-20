@@ -15,7 +15,7 @@
       <section x-data="{ isScrolled: false }">
         <div
           x-init="window.addEventListener('scroll', () => {isScrolled = (window.scrollY > 20);});"
-          class="-mt-20 relative transition duration-500 ease-in delay-150"
+          class="-mt-20 relative transition duration-500 ease-in delay-150 "
           :class="{'fixed-top': isScrolled, 'relative': !isScrolled }"
         >
           <div
@@ -157,7 +157,7 @@
     <div x-data="{ showBar: false }">
       <div
         :class="{ 'translate-y-full' : !showBar }"
-        class="bg-white shadow-mobile-menu transition bg-wight duration-500 fixed flex h-20 bottom-0 z-50 items-center w-full"
+        class="bg-white shadow-mobile-menu transition bg-wight duration-500 fixed flex h-14 bottom-0 z-50 items-center w-full lg:hidden md:hidden"
       >
         <ul
           class="flex items-center justify-between w-full h-full px-4"
