@@ -884,6 +884,10 @@ video {
   margin-top: 2rem;
 }
 
+.mr-36 {
+  margin-right: 9rem;
+}
+
 .block {
   display: block;
 }
@@ -1276,6 +1280,11 @@ video {
   border-color: rgb(14 165 233 / var(--tw-border-opacity));
 }
 
+.border-\[\#2786bd\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(39 134 189 / var(--tw-border-opacity));
+}
+
 .bg-\[\#2c5da9\] {
   --tw-bg-opacity: 1;
   background-color: rgb(44 93 169 / var(--tw-bg-opacity));
@@ -1345,6 +1354,10 @@ video {
   padding: 1.75rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .px-14 {
   padding-left: 3.5rem;
   padding-right: 3.5rem;
@@ -1403,6 +1416,11 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .pb-16 {
@@ -1584,6 +1602,11 @@ video {
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-\[\#2786bd\] {
+  --tw-text-opacity: 1;
+  color: rgb(39 134 189 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -1896,6 +1919,10 @@ svg .country:hover {
 
 .marker\:text-gray-300::marker {
   color: rgb(209 213 219 );
+}
+
+.hover\:border-none:hover {
+  border-style: none;
 }
 
 .hover\:border-sky-500:hover {
